@@ -1,3 +1,5 @@
+// Raccolta dati dal DOM
+let memberList = document.getElementById('members-list')
 // Creo un array di oggetti
 const teamMembers = [ 
     {
@@ -31,5 +33,23 @@ const teamMembers = [
         'images': 'barbara-ramos-graphic-designer.jpg'
       }
     ];
+
+    // Stampo le informazioni delle proprietà degli oggetti in console
+    console.table(teamMembers);
+
+    // Stampo in console le informazioni delle proprietà degli oggetti 
+    teamMembers.forEach(member => {
+    console.table(`Nome: ${member.name}, Professione: ${member.role}, Immagine di copertina: ${member.images}`);
+    });
+
+    // Stampo nel DOM le informazioni delle proprietà degli oggetti 
+    teamMembers.forEach(member => {
+        let info = document.createElement('li')
+        info.innerHTML = `Nome: ${member.name}, Professione: ${member.role}, Immagine di copertina: ${member.images}`;
+        memberList.appendChild(info)
+    });
+
+
+
 
 
