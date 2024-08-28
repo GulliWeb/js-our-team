@@ -11,7 +11,6 @@ const teamMembers = [
         'name': 'Angela Caroll',
         'role': 'Chief Editor',
         'images': 'img/angela-caroll-chief-editor.jpg'
-        
       },
       {
         'name': 'Walter Gordon',
@@ -46,7 +45,7 @@ const teamMembers = [
     // Stampo nel DOM le informazioni delle proprietà degli oggetti 
     teamMembers.forEach(member => {
         let info = document.createElement('li')
-        info.innerHTML = `Nome: ${member.name}, Professione: ${member.role}, Immagine di copertina: ${member.images}`;
+        info.innerHTML = `Nome: ${member.name}, Professione: ${member.role}, Immagine di copertina:`;
         memberList.appendChild(info)
 
         // Creo l'immagini
