@@ -5,32 +5,33 @@ const teamMembers = [
     {
         'name': 'Wayne Barnett',
         'role': 'Founder & CEO',
-        'images': 'wayne-barnett-founder-ceo.jpg'
+        'images': 'img/wayne-barnett-founder-ceo.jpg'
       },
       {
         'name': 'Angela Caroll',
         'role': 'Chief Editor',
-        'images': 'angela-caroll-chief-editor.jpg'
+        'images': 'img/angela-caroll-chief-editor.jpg'
+        
       },
       {
         'name': 'Walter Gordon',
         'role': 'Office Manager',
-        'images': 'walter-gordon-office-manager.jpg'
+        'images': 'img/walter-gordon-office-manager.jpg'
       },
       {
         'name': 'Angela Lopez',
         'role': 'Social Media Manager',
-        'images': 'angela-lopez-social-media-manager.jpg'
+        'images': 'img/angela-lopez-social-media-manager.jpg'
       },
       {
         'name': 'Scott Estrada',
         'role': 'Developer',
-        'images': 'scott-estrada-developer.jpg'
+        'images': 'img/scott-estrada-developer.jpg'
       },
       {
         'name': 'Barbara Ramos',
         'role': 'Graphic Designer',
-        'images': 'barbara-ramos-graphic-designer.jpg'
+        'images': 'img/barbara-ramos-graphic-designer.jpg'
       }
     ];
 
@@ -47,6 +48,14 @@ const teamMembers = [
         let info = document.createElement('li')
         info.innerHTML = `Nome: ${member.name}, Professione: ${member.role}, Immagine di copertina: ${member.images}`;
         memberList.appendChild(info)
+
+        // Creo l'immagini
+        let img = document.createElement('img')
+        img.src = member.images
+        img.style.width = '150px'
+        img.style.height = 'auto'
+
+        memberList.appendChild(img)
     });
 
 
