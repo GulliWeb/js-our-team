@@ -59,8 +59,7 @@ const teamMembers = [
 
         // Creo testo della card
         let cardText = document.createElement('p')
-        let br = document.createElement('br')
-        cardText.innerHTML = member.name + " - " +  member.role
+        cardText.innerHTML = member.name + " - " + member.role
         info.appendChild(cardText)
     });
 

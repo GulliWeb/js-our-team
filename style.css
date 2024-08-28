@@ -1,6 +1,6 @@
 body{
     background: linear-gradient(#2980b9, #663399);
-    background-size: cover;
+    height: 100vh; 
 }
 
 img{
@@ -11,6 +11,7 @@ img{
 .card{
     width: 250px;
     border-radius: 20px;
+    border: 1px solid black;
 }
 
 .wrapping{
@@ -19,10 +20,19 @@ img{
 
 h1{
     color: white;
-    font-size: 25px;
+    text-shadow: 0 0 4px #663399;
+    font-size: 35px;
+}
+
+h2{
+    color: darkgray;
+    text-shadow: 0 0 2px black;
 }
 
 p{
+    margin: 0;
+    padding: 5px 10px;
     background-color: #fff;
     color: #2980b9;
+    border-radius: 20px;
 }
