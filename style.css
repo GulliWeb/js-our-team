@@ -1,0 +1,28 @@
+body{
+    background: linear-gradient(#2980b9, #663399);
+    background-size: cover;
+}
+
+img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.card{
+    width: 250px;
+    border-radius: 20px;
+}
+
+.wrapping{
+    flex-basis: calc(100% / 3 - 50px);
+}
+
+h1{
+    color: white;
+    font-size: 25px;
+}
+
+p{
+    background-color: #fff;
+    color: #2980b9;
+}

@@ -45,16 +45,23 @@ const teamMembers = [
     // Stampo nel DOM le informazioni delle proprietà degli oggetti 
     teamMembers.forEach(member => {
         let info = document.createElement('li')
-        info.innerHTML = `Nome: ${member.name}, Professione: ${member.role}, Immagine di copertina:`;
+        info.classList.add('wrapping')
+        info.style.listStyleType = ('none')
+        memberList.classList.add('d-flex', 'flex-wrap', 'justify-content-center', 'wrapping')
         memberList.appendChild(info)
 
         // Creo l'immagini
         let img = document.createElement('img')
         img.src = member.images
-        img.style.width = '150px'
-        img.style.height = 'auto'
+    
+        info.appendChild(img)
+        info.classList.add('card', 'm-4')
 
-        memberList.appendChild(img)
+        // Creo testo della card
+        let cardText = document.createElement('p')
+        let br = document.createElement('br')
+        cardText.innerHTML = member.name + " - " +  member.role
+        info.appendChild(cardText)
     });
 
 
